@@ -5,4 +5,4 @@ from django.http.response import HttpResponse
 
 def test(request):
     test_task.delay()
-    return HttpResponse("Done")
+    return HttpResponse("Completed")

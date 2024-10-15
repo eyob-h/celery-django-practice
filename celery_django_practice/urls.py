@@ -20,5 +20,6 @@ from django.urls.conf import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('mail/', include('send_mail_app.urls')),
     path('', include('mainapp.urls')),
 ]
